@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="regdev.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+    .form-section {
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Hire 3.0</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pro.html">Our Process</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cont.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <h1 id="message"></h1>
+  <div class="container mt-5">
+    <h1>Developer Registration</h1>
+    <div class="form-section">
+      <h3>Personal Information</h3>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="phone
+">Phone Number</label>
+          <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
+        </div>
+        <div class="form-group">
+          <label for="linkedin">LinkedIn Profile</label>
+          <input type="text" class="form-control" id="linkedin" placeholder="Enter your LinkedIn profile URL">
+        </div>
+        <div class="form-group">
+          <label for="github">GitHub Profile</label>
+          <input type="text" class="form-control" id="github" placeholder="Enter your GitHub profile URL">
+        </div>
+        <div class="form-group">
+          <label for="resume">Resume</label>
+          <input type="file" class="form-control-file" id="resume" accept=".pdf,.doc,.docx">
+        </div>
+        <div class="form-group">
+          <label for="education">Education</label>
+          <textarea class="form-control" id="education" rows="3" placeholder="Enter your education background"></textarea>
+        </div>
+      </form>
+    </div>
+    <div class="form-section">
+      <h3>Skills</h3>
+      <form onsubmit="showMessage()">
+        <div class="form-group">
+          <label for="skills">Skills</label>
+          <input type="text" class="form-control" id="skills" placeholder="Enter your skills (e.g. Java, Python, React)">
+        </div>
+        <div class="form-group">
+          <label for="years">Years of Experience</label>
+          <input type="number" class="form-control" id="years" placeholder="Enter your years of experience">
+        </div>
+      </form>
+    </div>
+    <div class="form-section">
+      <h3>Availability</h3>
+      <form>
+        <div class="form-group">
+          <label for="availability">Availability</label>
+          <input type="text" class="form-control" id="availability" placeholder="Enter your availability (e.g. Full-time, Part-time)">
+        </div>
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input type="text" class="form-control" id="location" placeholder="Enter your location (e.g. Remote, On-site)">
+        </div>
+      </form>
+    </div>
+       <div class="form-section">
+      <h3>Set Password</h3>
+    <div class="form-group">
+  <label for="password">Password</label>
+  <input type="password" class="form-control" id="password" placeholder="Enter your password">
+</div>
+<div class="form-group">
+  <label for="confirm-password">Confirm Password</label>
+  <input type="password" class="form-control" id="confirm-password" placeholder="Confirm your password">
+</div>
+<form onsubmit="showMessage()">
+  <!-- Form fields -->
+  <div class="form-section">
+    <h3>Terms and Conditions</h3>
+    <div class="form-group">
+      <input type="checkbox" id="terms" required>
+      <label for="terms">I agree to the <a href="#">terms and conditions</a> of Hire 3.0</label>
+    </div>
+    <button type="button" class="btn btn-primary" onclick="window.location='pretest.html'">Submit</button>
+  </div>
+</form>
+
+<div id="message"></div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384
+-Qq4lJbtlAu+a5ZVnYM1z7QGPklHkPqh8J8KfCMWVDg=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
