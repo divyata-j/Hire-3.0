@@ -34,89 +34,94 @@
     </div>
   </nav>
   <h1 id="message"></h1>
-  <form class="container mt-5" action="/dev">
+  <form class="container mt-5" action="dev">
     <h1>Developer Registration</h1>
     <div class="form-section">
       <h3>Personal Information</h3>
-Phone Number</label>
-          <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
+</div>
+
+
+
+
+      <div class="form-group">
+        <label for="Name">Name</label>
+        <input type="text" class="form-control" id="linkedin" placeholder="Enter your full name"required>
+      </div>
+         <label for="phone number">Phone Number</label>
+          <input type="text" class="form-control" id="phone" placeholder="Enter your phone number"required>
         </div>
         <div class="form-group">
           <label for="linkedin">LinkedIn Profile</label>
-          <input type="text" class="form-control" id="linkedin" placeholder="Enter your LinkedIn profile URL">
+          <input type="text" class="form-control" id="linkedin" placeholder="Enter your LinkedIn profile URL"required>
         </div>
         <div class="form-group">
           <label for="github">GitHub Profile</label>
-          <input type="text" class="form-control" id="github" placeholder="Enter your GitHub profile URL">
+          <input type="text" class="form-control" id="github" placeholder="Enter your GitHub profile URL"required>
         </div>
         <div class="form-group">
           <label for="resume">Resume</label>
-          <input type="file" class="form-control-file" id="resume" accept=".pdf,.doc,.docx">
+          <input type="file" class="form-control-file" id="resume" accept=".pdf,.doc,.docx"required>
         </div>
         <div class="form-group">
           <label for="education">Education</label>
-          <textarea class="form-control" id="education" rows="3" placeholder="Enter your education background"></textarea>
+          <textarea class="form-control" id="education" rows="3" placeholder="Enter your education background"required></textarea>
         </div>
 
     </div>
     <div class="form-section">
       <h3>Skills</h3>
-
         <div class="form-group">
           <label for="skills">Skills</label>
-          <input type="text" class="form-control" id="skills" placeholder="Enter your skills (e.g. Java, Python, React)">
+          <input type="text" class="form-control" id="skills" placeholder="Enter your skills (e.g. Java, Python, React)"required>
         </div>
         <div class="form-group">
           <label for="years">Years of Experience</label>
-          <input type="number" class="form-control" id="years" placeholder="Enter your years of experience">
+          <input type="number" class="form-control" id="years" placeholder="Enter your years of experience"required>
         </div>
-
     </div>
     <div class="form-section">
       <h3>Availability</h3>
-
         <div class="form-group">
           <label for="availability">Availability</label>
-          <input type="text" class="form-control" id="availability" placeholder="Enter your availability (e.g. Full-time, Part-time)">
+          <input type="text" class="form-control" id="availability" placeholder="Enter your availability (e.g. Full-time, Part-time)"required>
         </div>
         <div class="form-group">
           <label for="location">Location</label>
-          <input type="text" class="form-control" id="location" placeholder="Enter your location (e.g. Remote, On-site)">
+          <input type="text" class="form-control" id="location" placeholder="Enter your location (e.g. Remote, On-site)"required>
         </div>
-
     </div>
        <div class="form-section">
       <h3>Set Password</h3>
     <div class="form-group">
   <label for="password">Password</label>
-  <input type="password" class="form-control" id="password" placeholder="Enter your password">
+  <input type="password" class="form-control" id="password" placeholder="Enter your password"required>
 </div>
 <div class="form-group">
   <label for="confirm-password">Confirm Password</label>
-  <input type="password" class="form-control" id="confirm-password" placeholder="Confirm your password">
+  <input type="password" class="form-control" id="confirm-password" placeholder="Confirm your password"required>
 </div>
-
-
   <div class="form-section">
     <h3>Terms and Conditions</h3>
     <div class="form-group">
       <input type="checkbox" id="terms" required>
       <label for="terms">I agree to the <a href="#">terms and conditions</a> of Hire 3.0</label>
     </div>
-    <button type="button" class="btn btn-primary" onclick="window.location='pretest.html'">Submit</button>
+    <button type="submit" class="btn btn-primary" >Submit</button>
   </div>
+
 
 
 
 <div id="message"></div>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384
--Qq4lJbtlAu+a5ZVnYM1z7QGPklHkPqh8J8KfCMWVDg=" crossorigin="anonymous"></script>
-<script type="text/javascript">
+-Qq4lJbtlAu+a5ZVnYM1z7QGPklHkPqh8J8KfCMWVDg=" crossorigin="anonymous">
+ type="text/javascript">
   function showMessage(){
     alert("form submmitted")
   }
+src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
 </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
 </form>
 </body>
 </html>
