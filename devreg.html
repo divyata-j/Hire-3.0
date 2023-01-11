@@ -34,22 +34,11 @@
     </div>
   </nav>
   <h1 id="message"></h1>
-  <div class="container mt-5">
+  <form class="container mt-5" action="/dev">
     <h1>Developer Registration</h1>
     <div class="form-section">
       <h3>Personal Information</h3>
-      <form>
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" id="name" placeholder="Enter your name">
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter your email">
-        </div>
-        <div class="form-group">
-          <label for="phone
-">Phone Number</label>
+Phone Number</label>
           <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
         </div>
         <div class="form-group">
@@ -68,11 +57,11 @@
           <label for="education">Education</label>
           <textarea class="form-control" id="education" rows="3" placeholder="Enter your education background"></textarea>
         </div>
-      </form>
+
     </div>
     <div class="form-section">
       <h3>Skills</h3>
-      <form onsubmit="showMessage()">
+
         <div class="form-group">
           <label for="skills">Skills</label>
           <input type="text" class="form-control" id="skills" placeholder="Enter your skills (e.g. Java, Python, React)">
@@ -81,11 +70,11 @@
           <label for="years">Years of Experience</label>
           <input type="number" class="form-control" id="years" placeholder="Enter your years of experience">
         </div>
-      </form>
+
     </div>
     <div class="form-section">
       <h3>Availability</h3>
-      <form>
+
         <div class="form-group">
           <label for="availability">Availability</label>
           <input type="text" class="form-control" id="availability" placeholder="Enter your availability (e.g. Full-time, Part-time)">
@@ -94,7 +83,7 @@
           <label for="location">Location</label>
           <input type="text" class="form-control" id="location" placeholder="Enter your location (e.g. Remote, On-site)">
         </div>
-      </form>
+
     </div>
        <div class="form-section">
       <h3>Set Password</h3>
@@ -106,8 +95,8 @@
   <label for="confirm-password">Confirm Password</label>
   <input type="password" class="form-control" id="confirm-password" placeholder="Confirm your password">
 </div>
-<form onsubmit="showMessage()">
-  <!-- Form fields -->
+
+
   <div class="form-section">
     <h3>Terms and Conditions</h3>
     <div class="form-group">
@@ -116,11 +105,18 @@
     </div>
     <button type="button" class="btn btn-primary" onclick="window.location='pretest.html'">Submit</button>
   </div>
-</form>
+
+
 
 <div id="message"></div>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384
 -Qq4lJbtlAu+a5ZVnYM1z7QGPklHkPqh8J8KfCMWVDg=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  function showMessage(){
+    alert("form submmitted")
+  }
+</script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</form>
 </body>
 </html>
