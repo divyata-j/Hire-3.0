@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="compdash.css">
+    <link rel="stylesheet" href="compdash.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
- <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Job Application Dashboard</title>
-
     <style>
-      .form-section {
-        margin: 20px 0;
-      }
-      </style>
-
-  <body >
+  .form-section {
+    margin: 20px 0;
+  }
+  </style>
+<body >
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Hire 3.0</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,54 +35,45 @@
         </div>
       </nav>
 
-
-    <div class="container mt-5">
-      <h1>Job Application Dashboard</h1>
-      <br>
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Developer Name</th>
-            <th>Tech Skills</th>
-            <th>Experience</th>
-            <th>Resume</th>
-            <th>Status</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>John Smith</td>
-            <td>Java, Python, C++</td>
-            <td>5 years</td>
-            <td><a href="#">View</a></td>
-            <td>
-              <select class="form-control" id="status-select">
-                <option>Pending</option>
-                <option>Under Interview</option>
-                <option>Interview Scheduled</option>
-                <option>Rejected</option>
-              </select>
-            </td>
-            <td><button class="btn btn-primary btn-update">Update</button></td>
-          </tr>
-          <!-- Add additional rows for each job application -->
-        </tbody>
-      </table>
-    </div>
-
-
-    <script>
-
-   src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-   src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.16.0/dist/umd/popper.min.js" integrity="sha384-Qt2C5tRV2tYfpxaG4/g+kZG3q3v5h5lBd0njyfMshw5Y5Z5n5G5X9n/D8Ll3O1E0" crossorigin="anonymous">
-   src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-      $('.btn-update').click(function() {
-        // Get the selected status from the dropdown
-        const status = $('#status-select').val();
-        // Divyata learn backend!!!!! and Send an update request to the server with the new status
-        // You will need to write the code to handle this update request
-      });
-    </script>
-  </body>
+  <div class="container mt-5">
+  <h1>Job Application Dashboard</h1>
+  <br>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Developer Name</th>
+        <th>Tech Skills</th>
+        <th>Experience</th>
+        <th>Resume</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John Smith</td>
+        <td>Java, Python, C++</td>
+        <td>5 years</td>
+        <td><a href="#">View</a></td>
+<td>
+<select class="form-control" id="status-select">
+<option>Pending</option>
+<option>Under Interview</option>
+<option>Interview Scheduled</option>
+<option>Rejected</option>
+</select>
+</td>
+<td><button class="btn btn-primary btn-update">Update</button></td>
+</tr>
+<!-- Add additional rows for each job application -->
+</tbody>
+</table>
+</div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.12.2/dist/umd/popper.min.js" integrity="sha384-v+2as1Wq3KtJcxh9xvH3KqWl3Bg7zE5gHdKVYhLcqI5R+/5C5/5x5x5x5x5x5x5x5" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script>
+  // add any additional javascript here
+</script>
+</body>
 </html>
